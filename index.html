@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>João Otávio | Desenvolvedor Web</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.oficial.png">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">J/RA STUDIO</div>
+    <ul class="nav-links">
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Transformando ideias em experiências digitais</h2>
+      <p>Sou João Otávio, desenvolvedor front-end apaixonado por tecnologia, arte e interações criativas. Vamos criar algo épico juntos?</p>
+      <a href="#contato" class="btn">Entre em contato</a>
+    </div>
+    <div class="floating-window">
+      <img class="profile-pic" src="Imagem_parameusite.jpg" alt="João Otávio">
+    </div>
+  </section>
+
+  <section id="projetos" class="projects">
+    <h2>Projetos</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Harley Road</h3>
+        <p>Site de vendas e aluguel de motos Harley-Davidson com design impactante e responsivo.</p>
+        <a href="https://sins020.github.io/Harleys/" target="_blank">Ver projeto</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <h2>Sobre mim</h2>
+    <p>Sou um desenvolvedor web especializado em front-end, apaixonado por criar interfaces bonitas, funcionais e modernas. Atualmente focado em HTML, CSS e JAVA SCRIPT e experiências digitais envolventes.  <strong>J/RA STUDIO</strong>, onde código encontra arte e atitude.</p>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2>Entre em contato</h2>
+    <form action="https://formsubmit.co/joaootaviotrabalho15@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu email" required>
+      <textarea name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p>
+      Ou fale comigo pelo Instagram:
+      <a href="https://instagram.com/joao19.otavio" target="_blank" class="instagram-btn">
+        <img src="icone instagram.png" alt="Instagram" />
+      </a>
+    </p>
+    <p>
+      Ou pelo WhatsApp:
+      <a href="https://wa.me/5562995031249" target="_blank" class="whatsapp-btn">
+        <img src="icone zap.png" alt="WhatsApp" />
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 João Otávio. Todos os direitos reservados.
+  </footer>
+
+  <!-- Botão flutuante do Instagram -->
+  <script>
+    const container = document.getElementById("stars");
+    const count = 50;
+    for (let i = 0; i < count; i++) {
+      const star = document.createElement("div");
+      star.className = "star";
+      star.style.left = Math.random() * window.innerWidth + "px";
+      star.style.top = Math.random() * window.innerHeight + "px";
+      star.style.animationDelay = Math.random() * 5 + "s";
+      star.style.opacity = Math.random();
+      container.appendChild(star);
+    }
+  </script>
+
+</body>
+
+</html>
