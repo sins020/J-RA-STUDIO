@@ -1,5 +1,6 @@
 /* style.css */
 
+
 :root {
   --cor-fundo: #0e0e1a;
   --cor-roxo: #7f00ff;
@@ -77,6 +78,7 @@ header {
   padding: 4rem 2rem;
   text-align: center;
   position: relative;
+
 }
 .img {
 position: absolute;
@@ -85,7 +87,8 @@ left: 50%;
 transform: translate(-50%, -50% );
 font-size: 18px;
 opacity: 0.2;
-
+max-width: 1000%;height: auto;
+   
 }
 .hero-content {
   max-width: 600px;
@@ -219,7 +222,6 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   .hero {
     padding: 2rem;
@@ -235,7 +237,6 @@ footer {
 
 }
 .instagram-btn {
-  /* Removido: position: fixed; */
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -275,4 +276,4 @@ footer {
   width: 20px;
   height: 20px;
   filter: brightness(0) invert(1);
-}
+}=
